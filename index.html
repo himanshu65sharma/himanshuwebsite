@@ -61,16 +61,77 @@ text-align:center;
   
  
 
-  50%  { left:943.478px; top:0px;}
+  50%  { left:100%; top:0px;}
 
   
   100% { left:0px; top:0px;}
 }
 
 
+.transition {
+  -webkit-transition: all 1000s linear;
+  -moz-transition: all 1000s linear;
+  -ms-transition: all 1000s linear;
+  -o-transition: all 1000s linear;
+  transition: all 1000s linear;
+}
+.translateAnimationClass { 
+  -webkit-transform: rotateX(43200deg) rotateY(14400deg);
+  -moz-transform: rotateX(43200deg) rotateY(14400deg);
+  -ms-transform: rotateX(43200deg) rotateY(14400deg);
+  -o-transform: rotateX(43200deg) rotateY(14400deg);
+  transform: rotateX(43200deg) rotateY(14400deg); 
+}
+.animation {
+  -webkit-animation: rotator 25s linear infinite;
+  -moz-animation: rotator 25s linear infinite;
+  -ms-animation: rotator 25s linear infinite;
+  -o-animation: rotator 25s linear infinite;
+  animation: rotator 25s linear infinite;
+}
 
+@-webkit-keyframes rotator {
+  0%   { -webkit-transform: rotateX(0deg)    rotateY(0deg);    }
+  100% { -webkit-transform: rotateX(1080deg) rotateY(360deg);  }
+}
+@-moz-keyframes rotator {
+  0%   { -moz-transform: rotateX(0deg)    rotateY(0deg);    }
+  100% { -moz-transform: rotateX(1080deg) rotateY(360deg);  }
+}
+@-ms-keyframes rotator {
+  0%   { -ms-transform: rotateX(0deg)    rotateY(0deg);    }
+  100% { -ms-transform: rotateX(1080deg) rotateY(360deg);  }
+}
+@-o-keyframes rotator {
+  0%   { -o-transform: rotateX(0deg)    rotateY(0deg);    }
+  100% { -o-transform: rotateX(1080deg) rotateY(360deg);  }
+}
+@keyframes rotator {
+  0%   { transform: rotateX(0deg)    rotateY(0deg);    }
+  100% { transform: rotateX(1080deg) rotateY(360deg);  }
+}
+
+p {
+  animation-duration: 3s;
+  animation-name: slidein;
+  animation-iteration-count: infinite;
+}
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%; 
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
     
-</style
+</style>
+<script>
+window.onload = function() { document.getElementsByClassName('transition')[0].classList.add('translateAnimationClass'); }
+</script>
 </head>
 <body>
 <ul>
@@ -85,11 +146,9 @@ text-align:center;
 <div id="d">
 <strong>
 HI I AM A </strong></div>
-<div id="e"><strong><br>
- < DEVELOPER   CODER     STUDENT     THINKER /></strong>
-</div>
 
-
+<p><strong><br>
+ < DEVELOPER   CODER     STUDENT     THINKER /></strong></p>
               
 
 	</body>
