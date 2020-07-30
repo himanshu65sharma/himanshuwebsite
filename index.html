@@ -6,7 +6,26 @@
 body {
   font-family: 'Lato', sans-serif;
 }
+.button {
+  padding:  10px;
+  font-size: 15px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #3399FF;
+  background-color: white;
+  border: yellow;
+  border-radius: 15px;
+  box-shadow: 0 8px rgb(204, 204, 255);
+}
 
+.button:hover {background-color: #3e8e41}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
 .overlay {
   height: 100%;
   width: 0;
@@ -32,13 +51,13 @@ body {
   padding: 8px;
   text-decoration: none;
   font-size: 36px;
-  color: #818181;
+  color: white;
   display: block;
   transition: 0.3s;
 }
 
 .overlay a:hover, .overlay a:focus {
-  color: #f1f1f1;
+  color: rgb(255, 128, 128);
 }
 
 .overlay .closebtn {
@@ -48,12 +67,14 @@ body {
   font-size: 60px;
 }
 
-@media screen and (max-height: 450px) {
+@media screen  {
+	
   .overlay a {font-size: 20px}
   .overlay .closebtn {
-  font-size: 40px;
+  font-size: 20px;
   top: 15px;
   right: 35px;
+  text-align:centre;
   }
 }
  ul {
@@ -75,12 +96,15 @@ font-size:35px;
 color:white;
 float:left;
  padding: 14px 16px;
+ left:20px;
 
 
  
 }
 #b {
   float: right;
+  padding:14px 16px;
+  
 }
 
 li a {
@@ -162,8 +186,8 @@ color:white;
   </div>
 </div>
 <ul>
-<li id="a"> Himanshu Sharma </li>
-<li id="b" style="font-size:35px;cursor:pointer;color:white;" onclick="openNav()">&#9776; </span></li>
+<li id="a"> <strong>Himanshu Sharma</strong> </li>
+<li id="b" ><button class="button" style="color:#3399FF;" onclick="openNav()">Touch me </button> </li>
 </ul>
 
 <script>
@@ -202,7 +226,7 @@ HI I AM A </strong></div>
 	</body>
 	<footer>
 	<p>
-	Designed and Maintained by Himanshu Sharma</p>
+	Designed and Maintained by ©HimanshuSharma</p>
 	</footer>
 </body>
 </html>
