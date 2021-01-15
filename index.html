@@ -1,164 +1,70 @@
 <!DOCTYPE html>
 <html>
-<title>
-	Himanshu Sharma 
-	</title>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <style>
-body {
-  font-family: 'Lato', sans-serif;
-}
-.button {
-  padding:  10px;
-  font-size: 15px;
-  text-align: center;
-  cursor: pointer;
-  outline: none;
-  color: #3399FF;
-  background-color: white;
-  border: yellow;
-  border-radius: 15px;
-  box-shadow: 0 8px rgb(204, 204, 255);
+* {
+  box-sizing:border-box;
 }
 
-.button:hover {background-color: #3e8e41}
-
-.button:active {
-  background-color: #3e8e41;
-  box-shadow: 0 5px #666;
-  transform: translateY(4px);
-}
-.overlay {
-	
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: rgb(197, 234, 243);
-  background-color: rgb(197, 234, 243);
-  overflow-x: hidden;
-  transition: 0.5s;
-}
-
-.overlay-content {
-  position: relative;
-  top: 25%;
-  width: 100%;
-  text-align: center;
-  margin-top: 30px;
-  font-size: 50px;
-}
-
-.overlay a {
-  padding: 8px;
-  text-decoration: none;
-  font-size: 50px;
-  color: white;
-  display: block;
-  transition: 0.3s;
-}
-
-.overlay a:hover, .overlay a:focus {
-  color: rgb(255, 128, 128);
+            div{
+	        box-shadow: 0px 0px 5px grey;
+          
+            border-radius: 10px;
+            background-color: #3399FF;
+            }
+            #a{
+            font-family:calibri;
+            box-shadow: 0px 0px 20px grey;
+            border-radius: 10px;
+            font-size:40px;
+            color:white;
+             background-color: #3399FF;
+             
+            position:fixed;
+            padding: 10px;
+            top: 0;
+             
+             margin:0px;
+            top:0px;
+            font-style: italic;
+            }
+            #b{
+            background-color:#66FFFF;
+            text-align:center;
+            border-radius: 25px;
+            box-shadow: 0px 0px 5px grey;
+            font-weight: bold;
+            font-family: 'Times New Roman', Times, serif;
+            font-style: italic;
+            }
+            .left {
+  background-color:#2196F3;
+  padding:20px;
+  float:left;
+  width:20%; /* The width is 20%, by default */
 }
 
-.overlay .closebtn {
-  position: absolute;
-  top: 20px;
-  right: 45px;
-  font-size: 100px;
+.main {
+  background-color:white;
+  box-shadow: none;
+   float:left;
+  width:80%; /* The width is 60%, by default */
 }
 
-@media screen  {
-	
-  .overlay a {font-size: 20px}
-  .overlay .closebtn {
-  font-size: 20px;
-  top: 15px;
-  right: 35px;
-  text-align:centre;
-  }
-}
- ul {
-border-radius: 25px;
-	 box-shadow: 10px 10px 5px grey;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #3399FF;
-  position: -webkit-sticky; /* Safari */
-  position: sticky;
-  top: 0;
-  padding: 10px;
-  margin:0px;
-top:0px;
-}
-#a{
-font-family:calibri;
-font-size:35px;
-color:white;
-float:left;
- padding: 14px 16px;
- left:20px;
 
-
+#j{
  
-}
-#b {
-  float: right;
-  padding:14px 16px;
-  
-}
-
-li a {
-font-family:calibri;
-font-size:22.5px;
-  display: block;
-  color: white;
   text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-li a:hover {
-  background-color: #111;
+  border-radius: 10px;
+ 
+  text-align: center;
+  
+  font-weight: bold;
 }
 #d{
-background-color:#66FFFF;
-text-align:center;
-border-radius: 25px;
-
-   }
-
-
-#animation {
-  animation-duration: 3s;
-  animation-name: slidein;
- text-align:center;
-  
-}
-@keyframes slidein {
-  from {
-    margin-left: 100%;
-    width: 300%; 
-  }
-
-  to {
-    margin-left: 0%;
-    width: 100%;
-  }
-}
-#f{
-padding: 14px 16px;
-left-side: 30px;
-}
-  
-#photo{
-text-align:center;
+  left: 200px;
 }
 #j{
 text-align:center;
@@ -174,6 +80,58 @@ color:blue;
 #red{
 color:orange;
 }
+
+/* Use a media query to add a break point at 800px: */
+
+@media screen and (max-width:800px) {
+  .left, .main, .right {
+    width:100%; /* The width is 100%, when the viewport is 800px or smaller */
+    text-align:center ;
+  }
+  #a{
+    font-size:30px;
+  
+  }
+  #b{
+    width: 100%;
+    padding-top: 30px;
+  }
+}
+.left{
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+
+}
+.left a:hover, .left a:focus {
+  color: rgb(255, 128, 128);
+  font-size: 30px;
+}
+
+#animation {
+  animation-duration: 3s;
+  animation-name: slidein;
+ text-align:center;
+ color: white;
+}
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%; 
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+#c {
+ 
+  
+  text-align: center;
+  
+}
 footer{
 
 font-family:calibri;
@@ -188,12 +146,12 @@ color:#3399FF;
 }
 #fi{
 
-  border-radius: 25px;
-  border: 2px solid #3399FF;
-  padding: 20px;
-  width: 90px;
-  height: 75px;
-text-align:right;
+border-radius: 0px;
+border: 2px solid #3399FF;
+box-shadow: 10px grey;
+width: 90px;
+height: 90px;
+
 
 }
 
@@ -201,73 +159,63 @@ text-align:right;
 </head>
 <body>
 
-<div id="myNav" class="overlay">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><button class="button" style="color:#3399FF;">close</button></a>
-  <div class="overlay-content">
-    <a href="index.html" style="font-size:35px;">About</a>
-    <a href="personaldetails.html" style="font-size:35px;">Personal  Details</a>
-    <a href="project.html" style="font-size:35px;">Projects</a>
-    <a href="social.html" style="font-size:35px;">Contact</a>
-  </div>
-</div>
-<ul>
-<li id="a"> <strong>Himanshu Sharma</strong> </li>
-<li id="b" ><button class="button" style="color:#3399FF;" onclick="openNav()">Touch me </button> </li>
-</ul>
+    <div>
+        <p id="a"><strong>
+            Himanshu Sharma 
+            </strong>
+        </p>
+        <br>
+        
+        <p id="b">
+          
+            Hi I am a</p>
+            <p id="animation"><strong>
+              < DEVELOPER />  < STUDENT />   < ENGINEER />   < THINKER /> </strong></p>
+              </div>
 
-<script>
-function openNav() {
-  document.getElementById("myNav").style.width = "100%";
-}
+            
+            <div class="left">
+              
+                <p><a href="index.html" >About</a><br></p>
+                <p><a href="personaldetails.html" >Personal  Details</a><br></p>
+                <p><a href="project.html" >Projects</a><br></p>
+                <p><a href="social.html" >Contact</a><br></p>
+              
+            </div>
+            
+            <div class="main">
+              <p id="c" "><img src="web-developer-programmer-flat-vector-25036194.jpg" width="200px" height="200px" ></p>
+              
+                <p id="cent">
+                  <p id="j" >
+            
+                    Hi, My name is <strong><em><u id ="color">Himanshu Sharma.</u></em></strong> <br> <br>I am from Satna(M.P.). <br> <br>  I am pursuing <strong id ="l"> Electrical And Electonics Engeeniring</strong> <br>from<br> <strong id="red">Lakshmi Narain College Of Technology</strong>, Bhopal(M.P.).
+                    
+                    </p></p>
+                <hr style="height:2px;border-width:0;color:blue;background-color:#3399FF;box-shadow: 2px 2px 0.5px grey;">
+                  <footer>
+                <br>
+                
+                <a href="https://www.instagram.com/himanshusharma.__/"><img src="d39a23d8f19c6cda9412ee93e7bddc66.jpg" width =" 50px" height="50px"></a>
+                <a href="https://twitter.com/Himansh51584505"><img src="twitter_logo_blue.png" width =" 50px" height="50px"></a>
+                <a href="https://github.com/himanshu65sharma"><img src="github-mark.png" width =" 85px" height="50px"></a>
+                  
+                <p> Designed and Maintained By Himanshu Sharma</p>
+                  </footer>
+                <p id="hi">Designed and Maintained By Himanshu Sharma</p>
+                <p id="fi">
+                  <script type="text/javascript" src="https://free-hit-counters.net/count/83kq"></script><br>
+                  <a href='http://www.counter-zaehler.de'>blog besucherzähler</a> <script type='text/javascript' src='https://www.whomania.com/ctr?id=f1d734ad98ad98553040a4c4b761ec25c54424c0'></script>
 
-function closeNav() {
-  document.getElementById("myNav").style.width = "0%";
-}
-</script>
-     <div id="d">
-<strong>
-HI I AM A </strong></div>
+                </p>
+              
+                
 
-<p id="animation"><strong><br>
- < DEVELOPER   CODER     STUDENT     THINKER /></strong></p>
- </div>
-	
+            </div>
+            
+           
+    </div>
+    
+</body>
 
-              <br><br>
-			 
-			 <p id="photo">
-			  <img src="web-developer-programmer-flat-vector-25036194.jpg" width="200px" height="200px">
-			  </p>
-			  <p id="j">
-				
-			 Hi, My name is <strong><em><u id ="color">Himanshu Sharma.</u></em></strong> <br> <br>I am from Satna(M.P.). <br> <br>  I am pursuing <strong id ="l"> Electrical And Electonics Engeeniring</strong> <br>from<br> <strong id="red">Lakshmi Narain College Of Technology</strong>, Bhopal(M.P.).
-
-			 </p>
-			
-			 
-			 <br>
-			 <br>
-			 <br>
-			 
-
-	</body>
-<br>
-<br>
-<br>
-<hr style="height:2px;border-width:0;color:blue;background-color:#3399FF;box-shadow: 2px 2px 0.5px grey;">
-	<footer>
-<br>
-
-<a href="https://www.instagram.com/himanshusharma.__/"><img src="d39a23d8f19c6cda9412ee93e7bddc66.jpg" width =" 50px" height="50px"></a>
-<a href="https://twitter.com/Himansh51584505"><img src="twitter_logo_blue.png" width =" 50px" height="50px"></a>
-<a href="https://github.com/himanshu65sharma"><img src="github-mark.png" width =" 85px" height="50px"></a>
-	
-<p> Designed and Maintained By Himanshu Sharma</p>
-	</footer>
-<p id="hi">Designed and Maintained By Himanshu Sharma</p>
-<p id="fi">
-<script type="text/javascript" src="https://free-hit-counters.net/count/7x7e"></script><br>
- <a href='https://www.symptoma.de/de/info/covid-19'>COVID-19</a> <script type='text/javascript' src='https://whomania.com/ctr?id=6c896e1a1b97f4a9ddf5f0d330bbeb6f92357f85'>
-</script>
-</p>
 </html>
